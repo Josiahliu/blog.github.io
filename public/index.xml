@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Phyger&#39;s Site</title>
+        <link>http://example.org/</link>
+        <description>Phyger&#39;s Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>ljs.com (刘佳帅)</managingEditor>
+            <webMaster>ljs.com (刘佳帅)</webMaster><lastBuildDate>Tue, 14 May 2024 16:48:54 &#43;0800</lastBuildDate>
+            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>面试视频</title>
+    <link>http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/</link>
+    <pubDate>Tue, 14 May 2024 16:48:54 &#43;0800</pubDate>
+    <author>刘佳帅</author>
+    <guid>http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/</guid>
+    <description><![CDATA[JUC+并发系列 适合JUC+并发比较薄弱，没学过或者只知道皮毛和基本理论的看 https://www.bilibili.com/video/BV1ar4y1x727?p=1 分布式锁 按顺序看,不要跳着看 https://www.bilib]]></description>
+</item>
+<item>
+    <title>司美记录</title>
+    <link>http://example.org/posts/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Tue, 14 May 2024 08:51:12 &#43;0800</pubDate>
+    <author>刘佳帅</author>
+    <guid>http://example.org/posts/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[4月5第一针司美 0.25 87.6 4月12第二针司美 0.25 85.25 ============================ 4月19第三针司美 0.5 84.2 4月26第四针司美 0.5 82.1 5月3第五针司美 0.5 80.8 5月8 第六针 0.5 79.7 5月17 第七针 78.3]]></description>
+</item>
+<item>
+    <title>Temp</title>
+    <link>http://example.org/posts/temp/</link>
+    <pubDate>Tue, 07 May 2024 16:10:10 &#43;0800</pubDate>
+    <author>刘佳帅</author>
+    <guid>http://example.org/posts/temp/</guid>
+    <description><![CDATA[不能再浑浑噩噩下去了 family公益广告 目标1. 减重 176 -&gt;152.2 -&gt;150 ==&gt; 2斤 7 斤&mdash;&ndash;145 100天重启身材计划(4月5日开始, 33%]]></description>
+</item>
+<item>
+    <title>0425</title>
+    <link>http://example.org/posts/0425/</link>
+    <pubDate>Thu, 25 Apr 2024 11:16:04 &#43;0800</pubDate>
+    <author>刘佳帅</author>
+    <guid>http://example.org/posts/0425/</guid>
+    <description><![CDATA[今日心情 工作尚未有起色,离家又难以割舍,谈婚论嫁以至眼前,而我却还在路上寻找自己 今天因为后台的数据格式， 和JSP中的样式没有对齐，没有使用I]]></description>
+</item>
+<item>
+    <title>java面试题</title>
+    <link>http://example.org/posts/first/</link>
+    <pubDate>Fri, 23 Feb 2024 18:29:32 &#43;0800</pubDate>
+    <author>刘佳帅</author>
+    <guid>http://example.org/posts/first/</guid>
+    <description><![CDATA[java方面 swich 在jdk7开始还可以是字符串 抽象类和接口的区别？ markdown文档中的面试题 myisam和innodb的区别 myisam是非]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Phyger&#39;s Site</title>
+    <link>http://example.org/post/</link>
+    <description>Recent content in Posts on Phyger&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>ljs.com (刘佳帅)</managingEditor>
+    <webMaster>ljs.com (刘佳帅)</webMaster>
+    <lastBuildDate>Tue, 14 May 2024 08:51:12 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>司美记录</title>
+      <link>http://example.org/post/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Tue, 14 May 2024 08:51:12 +0800</pubDate>
+      <author>ljs.com (刘佳帅)</author>
+      <guid>http://example.org/post/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/</guid>
+      <description>4月5第一针司美 0.25 87.6 4月12第二针司美 0.25 85.25 4月19第三针司美 0.5 84.2 4月26第四针司美 0.5 82.1 5月3第五针司美 0.5 80.8 5月8 第六针 0.5 79.7 5月17 第七针 5月</description>
+    </item>
+    
+  </channel>
+</rss>

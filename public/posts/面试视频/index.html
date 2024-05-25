@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>面试视频 - Phyger&#39;s Site</title><meta name="Description" content=""><meta property="og:title" content="面试视频" />
+<meta property="og:description" content="JUC&#43;并发系列 适合JUC&#43;并发比较薄弱，没学过或者只知道皮毛和基本理论的看 https://www.bilibili.com/video/BV1ar4y1x727?p=1 分布式锁 按顺序看,不要跳着看 https://www.bilib" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-14T16:48:54+08:00" />
+<meta property="article:modified_time" content="2024-05-14T16:48:54+08:00" /><meta property="og:site_name" content="玉龙" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="面试视频"/>
+<meta name="twitter:description" content="JUC&#43;并发系列 适合JUC&#43;并发比较薄弱，没学过或者只知道皮毛和基本理论的看 https://www.bilibili.com/video/BV1ar4y1x727?p=1 分布式锁 按顺序看,不要跳着看 https://www.bilib"/>
+<meta name="application-name" content="Phyger&#39;s Site">
+<meta name="apple-mobile-web-app-title" content="Phyger&#39;s Site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" /><link rel="prev" href="http://example.org/posts/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "面试视频",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91\/"
+        },"genre": "posts","wordcount":  2981 ,
+        "url": "http:\/\/example.org\/posts\/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91\/","datePublished": "2024-05-14T16:48:54+08:00","dateModified": "2024-05-14T16:48:54+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "刘佳帅"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Phyger&#39;s Site">戒</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Phyger&#39;s Site">戒</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">面试视频</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://www.u1s1.vip" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>刘佳帅</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-05-14">2024-05-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2981 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#redis部分">Redis部分</a></li>
+      </ul>
+    </li>
+    <li><a href="#1redis的数据类型和应用场景">1、Redis的数据类型和应用场景？</a></li>
+    <li><a href="#2redis的持久化机制">2、Redis的持久化机制？</a></li>
+    <li><a href="#3redis性能为什么这么快">3、Redis性能为什么这么快？</a></li>
+    <li><a href="#4redis的高可用方案有哪几种">4、Redis的高可用方案有哪几种？</a></li>
+    <li><a href="#5redis在项目中是用来做什么的">5、Redis在项目中是用来做什么的?</a></li>
+    <li><a href="#6redis的缓存击穿和缓存穿透区别">6、Redis的缓存击穿和缓存穿透区别?</a></li>
+    <li><a href="#7redis-一个请求过去是在客户端还是在服务端">7、Redis 一个请求过去，是在客户端还是在服务端？</a></li>
+    <li><a href="#8如果-redis-集群特别慢有什么排查方法">8、如果 Redis 集群特别慢，有什么排查方法?</a></li>
+    <li><a href="#9redis-分布式锁有哪几个参数">9、Redis 分布式锁有哪几个参数?</a></li>
+    <li><a href="#10redis-分布式锁怎么进行锁续期">10、Redis 分布式锁怎么进行锁续期?</a></li>
+    <li><a href="#mysql部分">mysql部分</a>
+      <ul>
+        <li><a href="#mysql">Mysql</a></li>
+        <li><a href="#mysql-支持哪些存储引擎">MySQL 支持哪些存储引擎?</a></li>
+        <li><a href="#myisam-和-innodb-的区别有哪些">MyISAM 和 InnoDB 的区别有哪些?</a></li>
+        <li><a href="#聚簇索引和非聚簇索引区别">聚簇索引和非聚簇索引区别?</a></li>
+        <li><a href="#使用非聚簇索引如何查找数据">使用非聚簇索引如何查找数据?</a></li>
+        <li><a href="#建立联合索引abcwhere-c--5是否会用到索引-为什么">建立联合索引(a,b,c)，where c = 5是否会用到索引? 为什么?</a></li>
+        <li><a href="#什么是数据库事务-事务的作用是什么">什么是数据库事务? 事务的作用是什么?</a></li>
+        <li><a href="#事务具有的四个特征">事务具有的四个特征?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>JUC+并发系列
+适合JUC+并发比较薄弱，没学过或者只知道皮毛和基本理论的看
+<a href="https://www.bilibili.com/video/BV1ar4y1x727?p=1" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1ar4y1x727?p=1</a></p>
+<p>分布式锁
+按顺序看,不要跳着看
+<a href="https://www.bilibili.com/video/BV13s4y1M7Md?p=5&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV13s4y1M7Md?p=5&vd_source=d7ab47613aabb12e18daa24986bfe09e</a>（基本概念）
+<a href="https://www.bilibili.com/video/BV186421F7xM/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV186421F7xM/?spm_id_from=333.337.search-card.all.click&vd_source=d7ab47613aabb12e18daa24986bfe09e</a>（redisson）</p>
+<p><a href="https://www.bilibili.com/video/BV1W14y1m7RP/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1W14y1m7RP/?spm_id_from=333.337.search-card.all.click&vd_source=d7ab47613aabb12e18daa24986bfe09e</a>（基于AOP+注解进行封装）</p>
+<p>MYSQL</p>
+<p><a href="https://www.bilibili.com/video/BV1t5411u7Fg?p=7" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1t5411u7Fg?p=7</a>（事务）</p>
+<p><a href="https://www.bilibili.com/video/BV1t5411u7Fg/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1t5411u7Fg/?spm_id_from=333.337.search-card.all.click&vd_source=d7ab47613aabb12e18daa24986bfe09e</a> （MVCC）</p>
+<p><a href="https://www.bilibili.com/video/BV17Y41117iV?p=2&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV17Y41117iV?p=2&vd_source=d7ab47613aabb12e18daa24986bfe09e</a>（MYSQL日志，和上面MVCC有关联，在看的时候需要串起来）</p>
+<p><a href="https://www.bilibili.com/video/BV1t5411u7Fg?p=2&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1t5411u7Fg?p=2&vd_source=d7ab47613aabb12e18daa24986bfe09e</a>（索引底层）</p>
+<p><a href="https://www.bilibili.com/video/BV1t5411u7Fg?p=6" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1t5411u7Fg?p=6</a> （MYSQL各种锁）</p>
+<p>SpringCloud
+Feign系列
+<a href="https://www.bilibili.com/video/BV1Rk4y1C7V8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1Rk4y1C7V8/?spm_id_from=333.337.search-card.all.click&vd_source=d7ab47613aabb12e18daa24986bfe09e</a></p>
+<p>Gateway系列
+<a href="https://www.bilibili.com/video/BV1ha411c7ib/?spm_id_from=333.788.recommend_more_video.0&amp;vd_source=d7ab47613aabb12e18daa24986bfe09e" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1ha411c7ib/?spm_id_from=333.788.recommend_more_video.0&vd_source=d7ab47613aabb12e18daa24986bfe09e</a></p>
+<p>面试八股回答话术参考
+<a href="https://space.bilibili.com/1031543543/channel/collectiondetail?sid=354192" target="_blank" rel="noopener noreffer ">https://space.bilibili.com/1031543543/channel/collectiondetail?sid=354192</a></p>
+<h3 id="redis部分">Redis部分</h3>
+<h2 id="1redis的数据类型和应用场景">1、Redis的数据类型和应用场景？</h2>
+<p>​	Redis支持字符串、列表、哈希、集合和有序集合等数据类型。</p>
+<p>​	Redis的应用场景包括缓存、排行榜、计数器、消息队列、分布式锁、会话管理等</p>
+<h2 id="2redis的持久化机制">2、Redis的持久化机制？</h2>
+<p>​	AOF+RDB</p>
+<p>​	RDB是指在指定时间间隔内将数据集快照存储到硬盘上，而AOF是将每个写操作追加到文件末尾。</p>
+<p>​	RDB适合大数据集和较少写入的场景，而AOF适合需要数据安全性保证的场景。</p>
+<h2 id="3redis性能为什么这么快">3、Redis性能为什么这么快？</h2>
+<p>​	它采用了单线程模型、基于内存、优秀的数据结构和算法、异步IO以及持久化机制等多种优化策略。这些策略使Redis在不同的应用场景下，具有极高的读写性能和稳定性。</p>
+<h2 id="4redis的高可用方案有哪几种">4、Redis的高可用方案有哪几种？</h2>
+<ul>
+<li>三主三从：Redis可以通过Cluster模式实现集群。</li>
+<li>哨兵：Redis可以通过主从复制和哨兵模式实现高可用性。在主从复制模式下，一个主节点可以拥有多个从节点，主节点会将数据同步到从节点上，从节点会自动将主节点的故障转移，从而保证高可用性。在哨兵模式下，一个哨兵节点会监控多个主从节点，当主节点出现故障时，哨兵节点会自动将从节点提升为主节点，从而保证高可用性。</li>
+</ul>
+<h2 id="5redis在项目中是用来做什么的">5、Redis在项目中是用来做什么的?</h2>
+<p>Redis在项目中可以用来实现缓存、消息队列、计数器、分布式锁等功能。具体而言，Redis可以通过将常用的数据缓存在内存中，加快数据读取的速度，从而提升系统性能；还可以作为消息队列，用于异步处理任务等；同时，Redis还可以通过实现分布式锁，保证在分布式环境下的数据一致性和安全性。</p>
+<h2 id="6redis的缓存击穿和缓存穿透区别">6、Redis的缓存击穿和缓存穿透区别?</h2>
+<p>​	缓存击穿是指缓存中不存在但数据库中存在的数据，此时会导致大量请求直接打到数据库上，引起数据库压力过大的情况。缓存穿透是指缓存和数据库中都不存在的数据，此时大量请求也会直接打到数据库上，同样会导致数据库压力过大的情况。缓存穿透可以通过在查询不存在的key时，将这些请求进行拦截或者直接返回空值来解决，而缓存击穿可以通过在查询不存在的key时，将其设为一个特殊的值，并设置一个较短的过期时间，从而避免大量请求直接打到数据库上</p>
+<h2 id="7redis-一个请求过去是在客户端还是在服务端">7、Redis 一个请求过去，是在客户端还是在服务端？</h2>
+<p>Redis请求在客户端发出，然后发送给Redis服务器，通过key找到对应的数据，并返回给客户端。</p>
+<h2 id="8如果-redis-集群特别慢有什么排查方法">8、如果 Redis 集群特别慢，有什么排查方法?</h2>
+<ul>
+<li>检查网络是否存在问题，包括网络延迟和带宽；</li>
+<li>检查Redis服务器的硬件资源，包括CPU、内存、硬盘等是否充足；</li>
+<li>检查Redis服务器的配置参数是否正确，包括最大连接数、最大内存等参数；</li>
+<li>检查Redis服务器是否存在瓶颈，包括Redis服务器是否存在高并发请求等。</li>
+</ul>
+<h2 id="9redis-分布式锁有哪几个参数">9、Redis 分布式锁有哪几个参数?</h2>
+<p>Redis分布式锁通常包括以下几个参数：</p>
+<ol>
+<li>锁的名称（key）：用于在Redis中存储锁信息的key，一般由业务系统根据需要进行命名。</li>
+<li>锁的值（value）：用于在Redis中存储锁信息的value，一般由业务系统根据需要进行生成。可以是一个随机的字符串或者一个包含当前线程信息的唯一标识等。</li>
+<li>锁的过期时间（expire）：用于指定锁的有效期，避免锁一直占用而导致死锁。可以根据业务需要设置合适的过期时间，一般为几秒或几分钟。</li>
+<li>获取锁的超时时间（timeout）：用于指定获取锁的最大等待时间。如果在该时间内无法获取到锁，就会返回获取锁失败。可以根据业务需要设置合适的超时时间，一般为几毫秒或几秒。</li>
+</ol>
+<h2 id="10redis-分布式锁怎么进行锁续期">10、Redis 分布式锁怎么进行锁续期?</h2>
+<ol>
+<li>在获取到锁之后，使用Redis的<code>EXPIRE</code>命令设置锁的过期时间。</li>
+<li>在锁的过期时间即将到期时，再次使用<code>EXPIRE</code>命令将锁的过期时间延长一定的时间。</li>
+</ol>
+<p>这样做的好处是可以避免锁过期时间过短，导致锁被其他线程释放的问题，同时又可以避免锁过期时间过长，导致锁长时间占用而影响性能的问题。</p>
+<p>在实际应用中，可以通过启动一个定时任务或者使用Redis的<code>TTL</code>命令来实现锁的续期</p>
+<h2 id="mysql部分">mysql部分</h2>
+<h3 id="mysql">Mysql</h3>
+<ul>
+<li>
+<h3 id="mysql-支持哪些存储引擎">MySQL 支持哪些存储引擎?</h3>
+</li>
+</ul>
+<p>InnoDB</p>
+<p>MyISAM</p>
+<p>Memory</p>
+<ul>
+<li>
+<h3 id="myisam-和-innodb-的区别有哪些">MyISAM 和 InnoDB 的区别有哪些?</h3>
+</li>
+</ul>
+<p>MyISAM是非事务型存储引擎，而InnoDB是事务型存储引擎。</p>
+<p>MyISAM锁定的是整个表，而InnoDB锁定的是行或页面。</p>
+<p>MyISAM不支持外键，而InnoDB支持。</p>
+<p>MyISAM比InnoDB更适合读取密集型应用程序，而InnoDB更适合写入密集型应用程序</p>
+<ul>
+<li>
+<h3 id="聚簇索引和非聚簇索引区别">聚簇索引和非聚簇索引区别?</h3>
+</li>
+</ul>
+<p><a href="https://www.jb51.net/article/251419.htm" target="_blank" rel="noopener noreffer ">https://www.jb51.net/article/251419.htm</a></p>
+<ul>
+<li>
+<h3 id="使用非聚簇索引如何查找数据">使用非聚簇索引如何查找数据?</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/531164591" target="_blank" rel="noopener noreffer ">https://zhuanlan.zhihu.com/p/531164591</a></p>
+</li>
+</ul>
+<p>​	当使用非聚簇索引进行数据查找时，MySQL会使用索引中的值来查找匹配的行（也就是找到聚簇索引再去匹配）。一旦找到了匹配的行，MySQL会使用指向实际数据行的指针获取行数据，然后返回给用户。</p>
+<ul>
+<li>
+<h3 id="建立联合索引abcwhere-c--5是否会用到索引-为什么">建立联合索引(a,b,c)，where c = 5是否会用到索引? 为什么?</h3>
+</li>
+</ul>
+<p>​	未满足最左匹配原则，不会走索引</p>
+<ul>
+<li>
+<h3 id="什么是数据库事务-事务的作用是什么">什么是数据库事务? 事务的作用是什么?</h3>
+</li>
+</ul>
+<p>​	数据库事务是一组操作，这些操作要么全部执行成功，要么全部失败回滚，以确保数据库在任何时刻都保持一致的状态。事务通常用于处理需要多个步骤的操作，以确保数据的完整性和一致性。</p>
+<ul>
+<li>
+<h3 id="事务具有的四个特征">事务具有的四个特征?</h3>
+</li>
+</ul>
+<p>​	MySQL 默认隔离级别?</p>
+<ul>
+<li>原子性（Atomicity）：事务是一个原子操作，要么全部成功完成，要么全部失败回滚。</li>
+<li>一致性（Consistency）：事务执行前后，数据库始终保持一致的状态。</li>
+<li>隔离性（Isolation）：并发执行的多个事务之间应该相互隔离，保证每个事务不会被其他事务干扰。</li>
+<li>持久性（Durability）：一旦事务提交成功，其结果应该永久保存</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-05-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" data-title="面试视频"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" data-title="面试视频"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" data-title="面试视频"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/%E9%9D%A2%E8%AF%95%E8%A7%86%E9%A2%91/" data-title="面试视频"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E5%8F%B8%E7%BE%8E%E8%AE%B0%E5%BD%95/" class="prev" rel="prev" title="司美记录"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>司美记录</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://www.u1s1.vip" target="_blank">刘佳帅</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
